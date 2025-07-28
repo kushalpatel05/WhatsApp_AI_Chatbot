@@ -1,5 +1,5 @@
 # AI Chatbot for WhatsApp 
-This AI Chatbot automates WhatsApp replies using Groq's powerful Large Language Model (LLM), reading chats via `pyautogui` and `pyperclip` for seamless desktop integration. It's designed to respond in a personalized Hinglish/Gujlish style, adapting to conversation context and sentiment. While currently configured for WhatsApp Web, its core AI logic is highly adaptable for integration with other messenger platforms through UI automation adjustments.
+AI Chatbot automates WhatsApp replies using Groq's powerful Large Language Model (LLM), reading chats via `pyautogui` and `pyperclip` for seamless desktop integration. It's designed to respond in a personalized Hinglish/Gujlish style, adapting to conversation context and sentiment. While currently configured for WhatsApp Web, its core AI logic is highly adaptable for integration with other messenger platforms through UI automation adjustments.
 
 ## Features
 * **Automated WhatsApp Replies**: Automatically reads new messages from WhatsApp Web and generates relevant responses.

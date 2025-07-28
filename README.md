@@ -68,7 +68,7 @@ Follow these steps to get the AI Chatbot up and running on your local machine:
         * The message input box at the bottom of the chat.
     * Update the corresponding coordinate variables in `chatbot.py` (e.g., `WHATSAPP_ICON_COORD`, `CHAT_SELECT_START_COORD`, `CHAT_SELECT_END_COORD`, `DESELECT_CLICK_COORD`, `CHAT_INPUT_COORD`) with your newly found coordinates.
       
-## Usage
+## How to Run
 To start the AI Chatbot, ensure WhatsApp Web is open and logged in on your desktop. Then run:
 ```bash
 python chatbot.py

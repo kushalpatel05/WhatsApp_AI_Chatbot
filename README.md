@@ -2,24 +2,24 @@
 AI Chatbot automates WhatsApp replies using Groq's powerful Large Language Model (LLM), reading chats via `pyautogui` and `pyperclip` for seamless desktop integration. It's designed to respond in a personalized Hinglish/Gujlish style, adapting to conversation context and sentiment. While currently configured for WhatsApp Web, its core AI logic is highly adaptable for integration with other messenger platforms through UI automation adjustments.
 
 ## Features
-* **Automated WhatsApp Replies**: Automatically reads new messages from WhatsApp Web and generates relevant responses.
-* **Groq LLM Integration**: Leverages Groq's high-performance LLMs (e.g., LLaMA-4 Scout) for intelligent and contextual replies.
-* **Multilingual and Cultural Tone**: Detects language (Hindi, Gujarati, English) and adjusts response tone to a friendly, casual Hinglish/Gujlish style, incorporating emojis and slang.
-* **Sentiment Awareness**: Analyzes the sentiment of incoming messages and adjusts the bot's tone to be supportive, cheerful, or empathetic.
-* **Conversation Memory**: Maintains a short-term memory of recent messages to provide contextually relevant replies.
-* **Error Handling**: Includes robust error handling for UI interactions and API calls, with a smart polling mechanism to reduce resource usage.
-* **Configurable**: Easy to set up with environment variables for API keys, bot name, and conversation memory depth.
+* **Automated WhatsApp Replies** :- Automatically reads new messages from WhatsApp Web and generates relevant responses.
+* **Groq LLM Integration** :- Leverages Groq's high-performance LLMs (e.g., LLaMA-4 Scout) for intelligent and contextual replies.
+* **Multilingual and Cultural Tone** :- Detects language (Hindi, Gujarati, English) and adjusts response tone to a friendly, casual Hinglish/Gujlish style, incorporating emojis and slang.
+* **Sentiment Awareness** :- Analyzes the sentiment of incoming messages and adjusts the bot's tone to be supportive, cheerful, or empathetic.
+* **Conversation Memory** :- Maintains a short-term memory of recent messages to provide contextually relevant replies.
+* **Error Handling** :- Includes robust error handling for UI interactions and API calls, with a smart polling mechanism to reduce resource usage.
+* **Configurable** :- Easy to set up with environment variables for API keys, bot name, and conversation memory depth.
 
 ## Technologies Used
-* **Python 3.12.6**: The core programming language.
-* **Groq API**: Powers the conversational AI, utilizing the LLaMA 4 model for intelligent responses.
-* **pyautogui**: Automates keyboard and mouse interactions for reading chat history and sending messages on WhatsApp Web.
-* **pyperclip**: Manages copy-paste operations to/from the system clipboard for chat data transfer.
-* **python-dotenv**: To manage environment variables securely (API keys and configurations).
-* **textblob**: Provides sentiment analysis capabilities.
-* **langdetect**: Detects the language of chat messages.
-* **re**: Python's built-in module for regular expressions, used for parsing chat history.
-* **os, time**: Standard Python libraries for system interaction and date/time operations.
+* **Python 3.12.6** :- The core programming language.
+* **Groq API** :- Powers the conversational AI, utilizing the LLaMA 4 model for intelligent responses.
+* **pyautogui** :- Automates keyboard and mouse interactions for reading chat history and sending messages on WhatsApp Web.
+* **pyperclip** :- Manages copy-paste operations to/from the system clipboard for chat data transfer.
+* **python-dotenv** :- To manage environment variables securely (API keys and configurations).
+* **textblob** :- Provides sentiment analysis capabilities.
+* **langdetect** :- Detects the language of chat messages.
+* **re** :- Python's built-in module for regular expressions, used for parsing chat history.
+* **os, time** :- Standard Python libraries for system interaction and date/time operations.
 
 ## Setup and Installation
 Follow these steps to get the AI Chatbot up and running on your local machine:
@@ -29,6 +29,7 @@ Follow these steps to get the AI Chatbot up and running on your local machine:
     cd your-repo-name
     ```
     (Replace `your-username` and `your-repo-name` with your actual GitHub details.)
+    
 2.  **Create a Virtual Environment (Recommended):**
     ```bash
     python -m venv venv
@@ -37,10 +38,12 @@ Follow these steps to get the AI Chatbot up and running on your local machine:
     # On macOS/Linux:
     source venv/bin/activate
     ```
+    
 3.  **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
+    
 4.  **Configure Environment Variables:**
     Create a file named `.env` in the root directory of your project (the same directory as `chatbot.py`) and add the following:
     ```
@@ -49,6 +52,7 @@ Follow these steps to get the AI Chatbot up and running on your local machine:
     KEEP_LAST_N_MESSAGES=8 # Number of last messages to keep for context (default: 6)
     ```
     * Get your `GROQ_API_KEY` from the [Groq Console](https://console.groq.com/keys).
+
 5.  **Adjust PyAutoGUI Coordinates:**
     This script relies on fixed screen coordinates, which are highly dependent on your screen resolution and WhatsApp Web layout.
     * Open WhatsApp Web on your browser.
